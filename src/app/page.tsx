@@ -9,7 +9,7 @@ export default function Home() {
 	const profilePicture: string = "juan-daniel-profile_xbskaf";
 	const name: string = "Juan Daniel";
 	const lastName: string = "Sanchez Ramirez";
-	const email: string = "juan.sanchez@stallionstudios.dev";
+	const email: string = "juan.sanchez@stallionstudios.net";
 	const phoneNumber: string = "+52 388 102 4353";
 	const address: string = "Valle Dorado, Bahia de Banderas, Nay";
 	const linkedIn: string = "https://linkedin.com/in/juan-sanchez-ramirez";
@@ -18,10 +18,25 @@ export default function Home() {
 
 	const jobs = [
 		{
+			jobTitle: "Mid Level Full Stack Developer",
+			employer: "Vidanta, IT Department",
+			startDate: "May 2024",
+			endDate: "Present",
+			achievements: [
+				"Maintain and update the VidantaWorld website using Next.js framework, ensuring optimal performance and modern user experience across all devices.",
+				"Support content managers by providing technical assistance and training for Contentstack CMS, enabling efficient content updates and website maintenance.",
+				"Generate and implement content models for new components and features, ensuring scalable and maintainable content architecture.",
+				"Collaborate with cross-functional teams to implement new features and enhancements, improving user engagement.",
+				"Participate in CRM implementation projects, contributing to the development of customer relationship management features and integrations.",
+				"Maintain CI/CD pipelines using Vercel for automated deployments, ensuring reliable and efficient release processes.",
+				"Document and present all code changes, feature implementations, and technical decisions to maintain codebase knowledge and facilitate team collaboration.",
+			],
+		},
+		{
 			jobTitle: "Senior Frontend Developer",
 			employer: "TAFER Hotels & Resorts, Marketing",
 			startDate: "March 2023",
-			endDate: "Present",
+			endDate: "May 2024",
 			achievements: [
 				"Key member of the web development team managing 15+ websites, including key brands like Garza Blanca Resorts and Hotel Mousai, ensuring high performance and consistent user experience.",
 				"Pioneered the team's transition to a pull request workflow, improving code quality and fostering a collaborative environment.",
@@ -77,11 +92,11 @@ export default function Home() {
 		},
 		{
 			title: "Platforms / Dev Tools",
-			list: ["Adobe XD", "AWS", "Bitbucket", "Bun", "Docker", "DockerHub", "Figma", "Firebase", "Git", "GitHub", "GitLab", "HubSpot", "Mamp", "Npm", "Postman", "Vite", "Webpack", "Wordpress", "Xamp"],
+			list: ["Adobe XD", "AWS", "Bitbucket", "Bun", "Contentstack",  "Docker", "DockerHub", "Figma", "Firebase", "Git", "GitHub", "GitLab", "HubSpot", "Mamp", "Npm", "Postman", "Vercel", "Vite", "Webpack", "Wordpress", "Xamp"],
 		},
 		{
 			title: "Miscellaneous Tools & Technologies",
-			list: ["Bash", "in18", "MySQL", "Perch CMS", "Pinia", "SQLite", "Strapi", "Vue Router", "Vuex"],
+			list: ["Bash", "Composer", "in18n", "MySQL", "Perch CMS", "Pinia", "SQLite", "Strapi", "Vue Router", "Vuex"],
 		},
 	];
 
@@ -100,7 +115,7 @@ export default function Home() {
 		},
 	];
 	return (
-		<main className='relative w-full shadow'>
+		<main className="relative w-full shadow">
 			<Header
 				name={name}
 				lastName={lastName}

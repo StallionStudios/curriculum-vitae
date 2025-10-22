@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Juan Daniel Sanchez Ramirez - CV
+
+A modern, responsive curriculum vitae built with Next.js 15, TypeScript, and Tailwind CSS. This CV showcases professional experience, technical skills, and achievements in an elegant, print-friendly format.
+
+## Features
+
+- **Modern Design**: Clean, professional layout with responsive design
+- **Print Optimized**: Perfect for printing or saving as PDF
+- **Performance Focused**: Built with Next.js 15 and optimized for speed
+- **Accessibility**: Screen reader friendly with proper semantic HTML
+- **SEO Optimized**: Comprehensive metadata and structured data
+- **Interactive Elements**: Print button and smooth interactions
+
+## Technologies Used
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Images**: Cloudinary for optimized image delivery
+- **Fonts**: Geist Sans and Geist Mono from Vercel
+
+## Key Sections
+
+- **Professional Summary**: Enhanced with key metrics and achievements
+- **Key Achievements**: Highlighted accomplishments with quantifiable results
+- **Featured Projects**: Showcase of technical projects and technologies used
+- **Work Experience**: Detailed job history with achievements
+- **Education**: Academic background and certifications
+- **Technical Skills**: Comprehensive skill categorization
+- **Soft Skills**: Leadership and communication abilities
 
 ## Getting Started
 
-First, run the development server:
+1. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+2. **Run Development Server**:
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Open Browser**: Navigate to [http://localhost:3000](http://localhost:3000)
+
+4. **Print/Save**: Use the print button or browser print function (Ctrl+P) to save as PDF
+
+## Customization
+
+### Personal Information
+
+Edit `src/app/page.tsx` to update:
+
+- Personal details (name, contact info)
+- Professional summary
+- Work experience
+- Education
+- Skills and achievements
+
+### Styling
+
+- Colors: Update the `#018E94` color values throughout components
+- Layout: Modify Tailwind classes in components
+- Print styles: Edit `src/app/globals.css` print media queries
+
+### Content Structure
+
+- Add new sections by creating components in `src/components/`
+- Update the main layout in `src/app/page.tsx`
+- Modify metadata in `src/app/layout.tsx`
+
+## Deployment
+
+This CV is optimized for deployment on Vercel:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or deploy directly to Vercel:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+vercel --prod
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Print/PDF Tips
 
-## Learn More
+- Use Chrome or Edge for best PDF generation
+- Select "Save as PDF" in print dialog
+- Ensure "Background graphics" is enabled for proper styling
+- Recommended settings: A4 size, portrait orientation
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is for personal use. Feel free to use as a template for your own CV.

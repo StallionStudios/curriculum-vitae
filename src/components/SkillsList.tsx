@@ -4,17 +4,18 @@ interface SkillsListProps {
 }
 const SkillsList = ({ skillTitle, skills }: SkillsListProps) => {
 	return (
-		<div className='mb-8'>
-			<h3 className='mb-2 text-xl font-semibold'>{skillTitle}</h3>
-			<ul className='columns-2 md:columns-4 lg:columns-2'>
+		<div className="skills-section mb-6">
+			<h3 className="mb-3 text-lg font-semibold text-white">{skillTitle}</h3>
+			<div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-2">
 				{skills.map((skill, index) => {
 					return (
-						<li key={index}>
-							<h4>{skill}</h4>
-						</li>
+						<div key={index} className="flex items-center gap-2">
+							<div className="h-1.5 w-1.5 rounded-full bg-[#018E94]"></div>
+							<span className="text-sm text-gray-200">{skill}</span>
+						</div>
 					);
 				})}
-			</ul>
+			</div>
 		</div>
 	);
 };

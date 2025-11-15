@@ -40,7 +40,4 @@ body {
 	.skills-section {
 		page-break-inside: avoid;
 	}
-	#printButton {
-		display: none;
-	}
 }

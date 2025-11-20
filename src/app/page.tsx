@@ -17,14 +17,14 @@ export default function Home() {
 	const linkedIn: string = 'https://linkedin.com/in/juan-sanchez-ramirez';
 	const gitHub: string = 'https://github.com/StallionStudios';
 	const aboutMe: string =
-		'Results-driven, bilingual (English/Spanish) Senior Web Developer with 4+ years of experience specializing in front-end JavaScript frameworks. Led teams of 3+ developers, achieved 40% performance improvements, and reduced deployment time by 40% through CI/CD implementation. Proven track record of mentoring junior developers, implementing modern development workflows, and driving significant improvements in website performance and user engagement. Passionate about leveraging cutting-edge technologies to create exceptional user experiences and optimize development workflows.';
+		'Results-driven, bilingual (English/Spanish) Senior Web Developer with 4+ years of experience specializing in front-end JavaScript frameworks. Led teams of junior developers, achieved significant performance improvements, and reduced deployment time by 40% through CI/CD implementation. Proven track record of mentoring junior developers, implementing modern development workflows, and driving significant improvements in website performance and user engagement. Passionate about leveraging cutting-edge technologies to create exceptional user experiences and optimize development workflows.';
 
 	const keyAchievements = [
 		'Led migration from legacy PHP to Nuxt.js, achieving 60% performance improvement',
 		'Played an essential role in migrating multiple websites to an AWS EC2 instance',
 		'Reduced deployment time by 40% through CI/CD pipeline implementation',
 		'Mentored 3+ junior developers, fostering team growth and knowledge sharing',
-		'Managed 15+ websites across multiple hotel brands with consistent high performance',
+		'Managed 15+ websites across multiple brands with consistent high performance',
 		'Led development of a modular UI system with atomic design and Storybook, setting the standard for future projects',
 	];
 
@@ -52,9 +52,9 @@ export default function Home() {
 	];
 	const jobs = [
 		{
-			jobTitle: 'Mid Level Full Stack Developer',
+			jobTitle: 'Full Stack Developer',
 			employer: 'Vidanta, IT Department',
-			startDate: 'May 2024',
+			startDate: 'May 2025',
 			endDate: 'Present',
 			achievements: [
 				'Maintain and update the VidantaWorld website using Next.js framework, ensuring optimal performance and modern user experience across all devices.',
@@ -70,7 +70,7 @@ export default function Home() {
 			jobTitle: 'Senior Frontend Developer',
 			employer: 'TAFER Hotels & Resorts, Marketing',
 			startDate: 'March 2023',
-			endDate: 'May 2024',
+			endDate: 'May 2025',
 			achievements: [
 				'Key member of the web development team managing 15+ websites, including key brands like Garza Blanca Resorts and Hotel Mousai, ensuring high performance and consistent user experience.',
 				"Pioneered the team's transition to a pull request workflow, improving code quality and fostering a collaborative environment.",
@@ -126,7 +126,7 @@ export default function Home() {
 	const technicalSkills = [
 		{
 			title: 'Programming Languages',
-			list: ['C#', 'Java', 'Javascript', 'PHP', 'Python', 'Typescript'],
+			list: ['C#', 'Bash', 'Java', 'Javascript', 'PHP', 'Python', 'Typescript'],
 		},
 		{
 			title: 'Frameworks',
@@ -142,44 +142,65 @@ export default function Home() {
 				'Adobe XD',
 				'AWS',
 				'Bitbucket',
-				'Bun',
 				'Contentstack',
-				'Docker',
-				'DockerHub',
+				'DockerDesktop',
 				'Figma',
 				'Firebase',
-				'Git',
 				'GitHub',
-				'GitLab',
 				'HubSpot',
 				'Mamp',
-				'Npm',
+				'Netlify',
 				'Postman',
 				'Vercel',
-				'Vite',
-				'Webpack',
 				'Wordpress',
 				'Xamp',
 			],
 		},
 		{
 			title: 'Miscellaneous Tools & Technologies',
-			list: ['Bash', 'Composer', 'in18n', 'MySQL', 'Perch CMS', 'Pinia', 'SQLite', 'Strapi', 'Vue Router', 'Vuex'],
+			list: [
+				"Bash",
+				"Composer",
+				"in18n",
+				"MySQL",
+				"Bitbucket Pipelines",
+				"Bun",
+				"Chakra UI",
+				"Docker",
+				"Git",
+				"GitHub Actions",
+				"GitLab",
+				"Grunt",
+				"Node.js",
+				"Npm",
+				"Pnpm",
+				"Vite",
+				"Webpack",
+				"Yarn",
+				"Perch CMS",
+				"Pinia",
+				"SQLite",
+				"GraphQL",
+				"Docker Compose",
+				"Strapi",
+				"Vue Router",
+				"Vuex",
+			],
 		},
 	];
 
 	const softSkills = [
 		{
 			title: 'Communication',
-			list: ['Active listening', 'Mentorship', 'Presentation skills', 'Team collaboration'],
+			list: ['Active listening', 'Mentorship', 'Team collaboration'],
 		},
 		{
 			title: 'Personal Effectiveness',
-			list: ['Adaptability', 'Attention to detail', 'Critical thinking', 'Problem-solving', 'Time management'],
+			list: ['Adaptability', 'Attention to detail', 'fast learning', 'Critical thinking', 'Problem-solving', 'Time management'],
 		},
 		{
 			title: 'Leadership',
-			list: ['Conflict resolution', 'Decision-making', 'Negotiation'],
+			list: ['Conflict resolution', 'Decision-making', 'Negotiation', 'Project management', 'Technical direction'],
 		},
 	];
 	return (

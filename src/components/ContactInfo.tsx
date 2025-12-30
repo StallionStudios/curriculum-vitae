@@ -1,4 +1,5 @@
-import { getI18n } from "@/locales/server";
+"use client";
+import { useI18n } from "@/locales/client";
 
 export interface ContactInfoProps {
   email: string;
@@ -7,14 +8,14 @@ export interface ContactInfoProps {
   linkedIn?: string;
   gitHub?: string;
 }
-const ContactInfo = async ({
+const ContactInfo = ({
   email,
   phoneNumber,
   address,
   linkedIn,
   gitHub,
 }: ContactInfoProps) => {
-  const t = await getI18n();
+  const t = useI18n();
   return (
     <address className="flex-col text-white not-italic gap-1 lg:flex lg:justify-center">
       <div className="flex items-center gap-2">
